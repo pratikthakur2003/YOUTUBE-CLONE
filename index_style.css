@@ -235,6 +235,124 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+/** CONTENT AREA **/
+.upper-tags {
+    margin-top: 20px;
+    height: 56px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 56px;
+    right: 0;
+}
+.tags {
+    height: 35px;
+    width: 85px;
+    background-color: rgb(70, 69, 69);
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+.tags:hover {
+    animation-name: tagsHover;
+    animation-duration: 150ms;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.tags:not(:hover) {
+    animation-name: tagsHover-reverse;
+    animation-duration: 150ms;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.videos-area {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white;; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.video-container {
+    width: 360px;
+    height: 303px;
+    
+}
+.thumbnail {
+    height: 203px;
+    /* border: 1px solid white; */
+    border-radius: 15px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.video-info {
+    
+    height: 100 px;
+    display: flex;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+.channel-icon {
+    height: 36px;
+    width: 36px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35rem;
+}
+.channel-info {
+    height: 100px;
+    /* border: 1px solid white; */
+    width: 80%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.video-name {
+    height: 44px;
+    margin-top: 5px;
+    /* border: 1px solid red; */
+}
+.channel-name {
+    height: 20px;
+    /* border: 1px solid pink; */
+    margin-top: 7px;
+}
+.upload-time {
+    height: 20px;
+    /* border: 1px solid yellow; */
+}
+@keyframes tagsHover {
+    from {
+        background-color: rgb(70, 69, 69);
+    }
+    to {
+        background-color: grey;
+    }
+}
+@keyframes tagsHover-reverse {
+    from {
+        background-color: grey;
+    }
+    to {
+        background-color: rgb(70, 69, 69);
+    }
+}
 @keyframes myHover {
     from {
         background-color: #0f0f0f;
